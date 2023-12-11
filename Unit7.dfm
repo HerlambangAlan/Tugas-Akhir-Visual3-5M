@@ -1,6 +1,6 @@
 object Form7: TForm7
-  Left = 478
-  Top = 252
+  Left = 416
+  Top = 264
   Width = 1305
   Height = 675
   Caption = 'Transaksi'
@@ -120,7 +120,7 @@ object Form7: TForm7
     OnClick = btnPrintClick
   end
   object dbgrd1: TDBGrid
-    Left = 88
+    Left = 40
     Top = 312
     Width = 601
     Height = 225
@@ -146,6 +146,19 @@ object Form7: TForm7
     Width = 121
     Height = 21
     TabOrder = 10
+  end
+  object dbgrd2: TDBGrid
+    Left = 736
+    Top = 312
+    Width = 521
+    Height = 217
+    DataSource = ds2
+    TabOrder = 11
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
   end
   object con1: TZConnection
     ControlsCodePage = cGET_ACP
@@ -487,5 +500,34 @@ object Form7: TForm7
     DataSet = zqry1
     Left = 512
     Top = 240
+  end
+  object con2: TZConnection
+    ControlsCodePage = cGET_ACP
+    UTF8StringsAsWideField = False
+    AutoEncodeStrings = False
+    Connected = True
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'db_laundry'
+    User = 'root'
+    Protocol = 'mysql'
+    LibraryLocation = 'D:\lambang\libmysql.dll'
+    Left = 984
+    Top = 48
+  end
+  object zqry2: TZQuery
+    Connection = con2
+    SQL.Strings = (
+      'SELECT kode_admin,'
+      'FROM transaksi'
+      'INNER JOIN admin ON transaksi.kode_admin = admin.kode_admin;')
+    Params = <>
+    Left = 992
+    Top = 104
+  end
+  object ds2: TDataSource
+    DataSet = zqry2
+    Left = 1000
+    Top = 168
   end
 end

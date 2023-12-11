@@ -32,6 +32,10 @@ type
     e6: TEdit;
     frxrprt1: TfrxReport;
     frxdbdtst1: TfrxDBDataset;
+    con2: TZConnection;
+    zqry2: TZQuery;
+    dbgrd2: TDBGrid;
+    ds2: TDataSource;
     procedure btnSimpanClick(Sender: TObject);
     procedure btnEditClick(Sender: TObject);
     procedure btnHapusClick(Sender: TObject);
