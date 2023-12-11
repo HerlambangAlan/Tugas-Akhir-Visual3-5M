@@ -4,7 +4,7 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, Menus, StdCtrls;
+  Dialogs, Menus, StdCtrls, jpeg, ExtCtrls;
 
 type
   TForm1 = class(TForm)
@@ -24,6 +24,7 @@ type
     e1: TEdit;
     e2: TEdit;
     Logout1: TMenuItem;
+    img1: TImage;
     procedure DataADmin1Click(Sender: TObject);
     procedure DataDetailPemesanan1Click(Sender: TObject);
     procedure DatapaketPelayanan1Click(Sender: TObject);
@@ -33,6 +34,13 @@ type
     procedure btn1Click(Sender: TObject);
     procedure Logout1Click(Sender: TObject);
     procedure btn2Click(Sender: TObject);
+    procedure btn3Click(Sender: TObject);
+    procedure btn4Click(Sender: TObject);
+    procedure btn5Click(Sender: TObject);
+    procedure btn6Click(Sender: TObject);
+    procedure btn7Click(Sender: TObject);
+    procedure btn8Click(Sender: TObject);
+    procedure btn9Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -109,6 +117,58 @@ end;
 procedure TForm1.btn2Click(Sender: TObject);
 begin
       if Form8=nil then
+  Form8:=TForm8.Create(Application);
+  Form8.Show;
+end;
+
+procedure TForm1.btn3Click(Sender: TObject);
+begin
+if Form2=nil then
+  Form2:=TForm2.Create(Application);
+  Form2.Show;
+
+
+  
+end;
+
+procedure TForm1.btn4Click(Sender: TObject);
+begin
+if Form3=nil then
+  Form3:=TForm3.Create(Application);
+  Form3.Show;
+end;
+
+procedure TForm1.btn5Click(Sender: TObject);
+begin
+if Form4=nil then
+  Form4:=TForm4.Create(Application);
+  Form4.Show;
+end;
+
+procedure TForm1.btn6Click(Sender: TObject);
+begin
+if Form5=nil then
+  Form5:=TForm5.Create(Application);
+  Form5.Show;
+end;
+
+procedure TForm1.btn7Click(Sender: TObject);
+begin
+if Form6=nil then
+  Form6:=TForm6.Create(Application);
+  Form6.Show;
+end;
+
+procedure TForm1.btn8Click(Sender: TObject);
+begin
+if Form7=nil then
+  Form7:=TForm7.Create(Application);
+  Form7.Show;
+end;
+
+procedure TForm1.btn9Click(Sender: TObject);
+begin
+if Form8=nil then
   Form8:=TForm8.Create(Application);
   Form8.Show;
 end;
