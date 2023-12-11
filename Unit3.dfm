@@ -1,6 +1,6 @@
 object Form3: TForm3
-  Left = 416
-  Top = 217
+  Left = 509
+  Top = 282
   Width = 1305
   Height = 675
   Caption = 'detail_pemesanan'
@@ -16,16 +16,28 @@ object Form3: TForm3
   object lbl3: TLabel
     Left = 40
     Top = 48
-    Width = 84
-    Height = 13
-    Caption = 'kode_pemesanan'
+    Width = 116
+    Height = 19
+    Caption = 'Kode Pemesanan'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Times New Roman'
+    Font.Style = [fsBold]
+    ParentFont = False
   end
   object lbl4: TLabel
     Left = 40
     Top = 72
-    Width = 41
-    Height = 13
-    Caption = 'id_paket'
+    Width = 57
+    Height = 19
+    Caption = 'Id Paket'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Times New Roman'
+    Font.Style = [fsBold]
+    ParentFont = False
   end
   object lbl5: TLabel
     Left = 40
@@ -56,29 +68,29 @@ object Form3: TForm3
     Caption = 'ket_detail'
   end
   object e1: TEdit
-    Left = 136
+    Left = 168
     Top = 48
     Width = 121
     Height = 21
     TabOrder = 0
   end
   object e2: TEdit
-    Left = 136
+    Left = 168
     Top = 72
     Width = 121
     Height = 21
     TabOrder = 1
   end
   object e3: TEdit
-    Left = 136
+    Left = 168
     Top = 104
     Width = 121
     Height = 21
     TabOrder = 2
   end
   object e4: TEdit
-    Left = 136
-    Top = 136
+    Left = 168
+    Top = 128
     Width = 121
     Height = 21
     TabOrder = 3

@@ -16,69 +16,99 @@ object Form4: TForm4
   object lbl3: TLabel
     Left = 40
     Top = 48
-    Width = 59
-    Height = 13
-    Caption = 'nama_paket'
+    Width = 97
+    Height = 19
+    Caption = 'Nama Paket'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Times New Roman'
+    Font.Style = [fsBold]
+    ParentFont = False
   end
   object lbl4: TLabel
     Left = 40
     Top = 72
-    Width = 72
-    Height = 13
-    Caption = 'kategori_paket'
+    Width = 102
+    Height = 19
+    Caption = 'Kategori Paket'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Times New Roman'
+    Font.Style = [fsBold]
+    ParentFont = False
   end
   object lbl5: TLabel
     Left = 40
-    Top = 104
-    Width = 55
-    Height = 13
-    Caption = 'jenis_paket'
+    Top = 96
+    Width = 97
+    Height = 19
+    Caption = 'Jenis Paket'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Times New Roman'
+    Font.Style = [fsBold]
+    ParentFont = False
   end
   object lbl6: TLabel
     Left = 40
-    Top = 136
-    Width = 61
-    Height = 13
-    Caption = 'harga_paket'
+    Top = 120
+    Width = 97
+    Height = 19
+    Caption = 'Harga Paket'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Times New Roman'
+    Font.Style = [fsBold]
+    ParentFont = False
   end
   object lbl7: TLabel
     Left = 40
-    Top = 168
-    Width = 48
-    Height = 13
-    Caption = 'ket_paket'
+    Top = 152
+    Width = 68
+    Height = 19
+    Caption = 'Ket Paket'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Times New Roman'
+    Font.Style = [fsBold]
+    ParentFont = False
   end
   object e1: TEdit
-    Left = 136
+    Left = 168
     Top = 48
     Width = 121
     Height = 21
     TabOrder = 0
   end
   object e2: TEdit
-    Left = 136
+    Left = 168
     Top = 72
     Width = 121
     Height = 21
     TabOrder = 1
   end
   object e3: TEdit
-    Left = 136
-    Top = 104
+    Left = 168
+    Top = 96
     Width = 121
     Height = 21
     TabOrder = 2
   end
   object e4: TEdit
-    Left = 136
-    Top = 136
+    Left = 168
+    Top = 120
     Width = 121
     Height = 21
     TabOrder = 3
   end
   object e5: TEdit
-    Left = 136
-    Top = 168
+    Left = 168
+    Top = 144
     Width = 121
     Height = 21
     TabOrder = 4
@@ -94,7 +124,7 @@ object Form4: TForm4
   end
   object btnEdit: TButton
     Left = 152
-    Top = 272
+    Top = 264
     Width = 75
     Height = 25
     Caption = 'Edit'
@@ -102,8 +132,8 @@ object Form4: TForm4
     OnClick = btnEditClick
   end
   object btnHapus: TButton
-    Left = 248
-    Top = 272
+    Left = 240
+    Top = 264
     Width = 75
     Height = 25
     Caption = 'Hapus'
@@ -111,8 +141,8 @@ object Form4: TForm4
     OnClick = btnHapusClick
   end
   object btnPrint: TButton
-    Left = 336
-    Top = 272
+    Left = 328
+    Top = 264
     Width = 75
     Height = 25
     Caption = 'Print'
@@ -120,8 +150,8 @@ object Form4: TForm4
     OnClick = btnPrintClick
   end
   object dbgrd1: TDBGrid
-    Left = 112
-    Top = 336
+    Left = 48
+    Top = 328
     Width = 665
     Height = 169
     DataSource = ds1
@@ -176,8 +206,8 @@ object Form4: TForm4
       'begin'
       ''
       'end.')
-    Left = 664
-    Top = 72
+    Left = 560
+    Top = 32
     Datasets = <
       item
         DataSet = frxdbdtst1
@@ -436,7 +466,7 @@ object Form4: TForm4
     UserName = 'frxdbdtst1'
     CloseDataSource = False
     DataSet = zqry1
-    Left = 664
-    Top = 136
+    Left = 560
+    Top = 96
   end
 end

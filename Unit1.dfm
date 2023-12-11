@@ -1125,14 +1125,14 @@ object Form1: TForm1
       Left = 312
       Top = 248
       Width = 121
-      Height = 33
+      Height = 21
       TabOrder = 2
     end
     object e2: TEdit
       Left = 312
       Top = 296
       Width = 121
-      Height = 33
+      Height = 21
       TabOrder = 3
     end
   end

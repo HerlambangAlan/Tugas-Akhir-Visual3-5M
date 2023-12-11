@@ -1,6 +1,6 @@
 object Form2: TForm2
-  Left = 530
-  Top = 337
+  Left = 527
+  Top = 332
   Width = 1305
   Height = 675
   Caption = 'admin'
@@ -16,37 +16,67 @@ object Form2: TForm2
   object lbl1: TLabel
     Left = 40
     Top = 48
-    Width = 26
-    Height = 13
-    Caption = 'nama'
+    Width = 49
+    Height = 22
+    Caption = 'Nama'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Times New Roman'
+    Font.Style = [fsBold]
+    ParentFont = False
   end
   object lbl2: TLabel
     Left = 40
     Top = 72
-    Width = 36
-    Height = 13
-    Caption = 'telepon'
+    Width = 65
+    Height = 19
+    Caption = 'Telepon'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Times New Roman'
+    Font.Style = [fsBold]
+    ParentFont = False
   end
   object lbl3: TLabel
     Left = 40
     Top = 104
-    Width = 32
-    Height = 13
-    Caption = 'alamat'
+    Width = 48
+    Height = 19
+    Caption = 'Alamat'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Times New Roman'
+    Font.Style = [fsBold]
+    ParentFont = False
   end
   object lbl4: TLabel
     Left = 40
     Top = 136
-    Width = 46
-    Height = 13
-    Caption = 'katasandi'
+    Width = 68
+    Height = 19
+    Caption = 'Katasandi'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Times New Roman'
+    Font.Style = [fsBold]
+    ParentFont = False
   end
   object lbl5: TLabel
     Left = 40
     Top = 168
-    Width = 37
-    Height = 13
-    Caption = 'jabatan'
+    Width = 53
+    Height = 19
+    Caption = 'Jabatan'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Times New Roman'
+    Font.Style = [fsBold]
+    ParentFont = False
   end
   object e2: TEdit
     Left = 136
@@ -153,13 +183,13 @@ object Form2: TForm2
     SQL.Strings = (
       'select * from admin')
     Params = <>
-    Left = 592
-    Top = 104
+    Left = 512
+    Top = 80
   end
   object ds1: TDataSource
     DataSet = zqry1
-    Left = 616
-    Top = 200
+    Left = 512
+    Top = 144
   end
   object frxrprt1: TfrxReport
     Version = '4.0.11'
@@ -176,8 +206,8 @@ object Form2: TForm2
       'begin'
       ''
       'end.')
-    Left = 688
-    Top = 120
+    Left = 560
+    Top = 40
     Datasets = <
       item
         DataSet = frxdbdtst1
@@ -431,7 +461,7 @@ object Form2: TForm2
     UserName = 'frxdbdtst1'
     CloseDataSource = False
     DataSet = zqry1
-    Left = 720
-    Top = 200
+    Left = 568
+    Top = 96
   end
 end
